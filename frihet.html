@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <style>
+        #first{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href='result.html'>Cafe</a></h1>
+    <ul>
+        <script>
+            var cafe = ['ediya', 'megamgc', 'frihet'];
+            for(let i = 0; i < cafe.length; i++){
+                document.write('<li><a href="' + cafe[i] + '.html">' + cafe[i] + '</a></li>')
+            }
+        </script>
+        <p>
+            <span id="first">Frihet</span>은 가장 최근 생긴 무인카페이다.<br>
+            무인카페 특성상 매장관리가 어렵고 커피의 품질이 떨어진다는 편견이<br>
+            있는데, Frihet은 전용 머신을 이용하여 관리하고있다.
+        </p>
+    </ul>
+</body>
+</html>

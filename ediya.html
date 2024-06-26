@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <style>
+        #first{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href='result.html'>Cafe</a></h1>
+    <ul>
+        <script>
+            var cafe = ['ediya', 'megamgc', 'frihet'];
+            for(let i = 0; i < cafe.length; i++){
+                document.write('<li><a href="' + cafe[i] + '.html">' + cafe[i] + '</a></li>')
+            }
+        </script>
+        <p>
+            <span id="first">Ediya</span>는 동네에서 가장 오래된 프랜차이즈 카페이다<br>
+            처음 영업을 시작할 때는 싼 가격을 강점으로 소비자에게 접근했지만,<br>
+            최근, 메가mgc커피와 컴포즈커피에 밀려 이러지도 저러지도 못 하는<br>
+            상황이다. 매장 공간이 넓어 카페공부를 하기 안성맞춤이다.
+        </p>
+    </ul>
+</body>
+</html>

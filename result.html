@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <style>
+        #first{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href='result.html'>Cafe</a></h1>
+    <input type = 'button' value = 'NightMode' onclick="
+    var aList = document.querySelectorAll('a');
+    var target = document.querySelector('body');
+    if(this.value === 'NightMode'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'DayMode';
+        for(let i = 0; i < aList.length; i++){
+            aList[i].style.color = 'powderblue';
+        }
+    }
+    else{
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'NightMode';
+        for(let i = 0; i < aList.length; i++){
+            aList[i].style.color = 'blue';
+        }
+    }
+    ">
+    <ul>
+        <script>
+            var cafe = ['ediya', 'megamgc', 'frihet'];
+            for(let i = 0; i < cafe.length; i++){
+                document.write('<li><a href="' + cafe[i] + '.html">' + cafe[i] + '</a></li>')
+            }
+        </script>
+        <p>
+            <span id="first">카페(Cafe)</span>란 커피, 차 등을 마시는 장소, 위치. 한국어로는 찻집.<br>
+            현대 그리스어, 프랑스어, 이탈리아어 등 많은 유럽<br>
+            언어들이 커피를 '카페'라 부르는데, 이것이 영어에서<br>
+            '커피를 파는 집'으로 굳어졌다. 여담으로 홍차를<br>
+            전문적으로 취급하는 곳은 '살롱 드 떼'라 부르기도 한다.
+        </p>
+    </ul>
+</body>
+</html>
